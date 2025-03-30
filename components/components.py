@@ -16,12 +16,14 @@ class WebElement:
         except NoSuchElementException:
             return False
         return True
+    def get_text(self):
+        return str(self.find_element().text)
 
 class FooterComponent:
-     def __init__(self, driver):
+    def __init__(self, driver):
             self.driver = driver
 
-     def find_element(self):
+    def find_element(self):
          return self.driver.find_element(By.CSS_SELECTOR, "footer")
-     def get_text(self):
-        return str(self.find_element().text)
+    def get_text(self):
+         return str(self.find_element().text)
