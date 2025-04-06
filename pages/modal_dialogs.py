@@ -12,5 +12,3 @@ class ModalDialogs(BasePage):
 
 
 
-
-
