@@ -67,6 +67,10 @@ class WebElement:
         else:
             print("Locator type " + self.locator_type + " not correct")
 
+    def check_css(self, style, value=""):
+        return self.find_element().value_of_css_property(style) == value
+
+
 class FooterComponent:
     def __init__(self, driver):
             self.driver = driver
