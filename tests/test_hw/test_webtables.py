@@ -1,5 +1,4 @@
 from pages.webtables import WebTables
-from components.components import WebElement
 import time
 def test_webtables(browser):
     web_tables = WebTables(browser)
@@ -23,4 +22,5 @@ def test_webtables(browser):
     web_tables.btn_submit.click()
     time.sleep(2)
     web_tables.btn_delete.click()
+    time.sleep(2)
 
